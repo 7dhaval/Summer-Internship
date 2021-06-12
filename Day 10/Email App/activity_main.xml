@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1_email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="22dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText2_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1_email1"
+        android:layout_below="@+id/editText1_email1"
+        android:layout_marginTop="18dp"
+       android:ems="10"/>
+
+    <EditText
+        android:id="@+id/editText3_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2_subject"
+        android:layout_alignLeft="@+id/editText2_subject"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layot_alignBaseline="@id/editText1_email1"
+        android:layout_alignBottom="@id/editText1_email1"
+        android:layout_alignParentLeft="true"
+        android:text="To:"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layot_alignBaseline="@id/editText2_subject"
+        android:layout_alignBottom="@id/editText2_subject"
+        android:layout_alignParentLeft="true"
+        android:text="Subject:"/>
+
+
+
+</LinearLayout>
